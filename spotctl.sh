@@ -40,7 +40,7 @@ echo -ne '\n'
 }
 
 
-options='USAGE: Please provide me a valid argument. \n Current Options include: \n     pause: Pause your current track \n     next: Change to next track    \n play:play current track'
+options='USAGE: spotcrl [$ARG] \n\nPlease provide me a valid argument. \n Current Options include: \n     pause: Pause your current track \n     next: Change to next track    \n play:play current track'
 if [[ $nav == '' && $nav != 'next' && $nav != 'pause' && $nav != 'play' ]]; then
     echo -e "You didn't enter a valid command, dummy"
     echo -e $options
